@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p,
+a,
+li,
+label,
+div,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+body,
+#__next {
+  background-color: #ffffff;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero {
+  background-image: url('https://res.cloudinary.com/walking-voice-limited/image/upload/q_auto/v1616063654/dantata/construction_worker_b329rt.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active {
+  border-bottom: 4px solid #28245f;
+}
