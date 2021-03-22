@@ -171,12 +171,12 @@ export const Nav = () => {
         <div className='flex flex-row lg:w-3/5 my-8 w-full'>
           {' '}
           <Link href='/services'>
-            <a className='group relative text-xs md:text-sm bg-secondary focus:outline-none font-medium transition duration-500 ease-in-out border border-secondary hover:border-primary text-white rounded-sm py-2 lg:px-3.5 block hover:bg-primary flex flex-row w-1/2 lg:w-1/5 flex flex-row justify-center items-center z-20'>
+            <a className='group relative text-xs md:text-sm bg-secondary focus:outline-none font-medium transition duration-500 ease-in-out border border-secondary hover:border-primary text-white rounded-sm py-2 lg:px-3.5 block hover:bg-primary flex flex-row w-1/2 lg:w-2/5 flex flex-row justify-center items-center z-20'>
               Our Services <BsArrowRightShort className='text-lg lg:text-2xl' />
             </a>
           </Link>
           <Link href='/about'>
-            <a className='group relative text-xs md:text-sm bg-white focus:outline-none font-medium transition duration-500 ease-in-out border text-gray-700 rounded-sm py-2 lg:px-3.5 block hover:bg-primary flex flex-row w-1/2 lg:w-1/5 flex flex-row justify-center items-center mx-6 z-20 hover:border-primary'>
+            <a className='group relative text-xs md:text-sm bg-white focus:outline-none font-medium transition duration-500 ease-in-out border text-gray-700 rounded-sm py-2 lg:px-3.5 block hover:bg-primary flex flex-row w-1/2 lg:w-2/5 flex flex-row justify-center items-center mx-6 z-20 hover:border-primary'>
               More About Us!
             </a>
           </Link>
