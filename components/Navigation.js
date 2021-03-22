@@ -12,7 +12,7 @@ export const Nav = () => {
   const router = useRouter()
   return (
     <div className='hero overflow-hidden h-screen'>
-      <header className='w-full bg-transparent md:border-b border-solid border-gray-300 border-opacity-25'>
+      <header className='w-full bg-transparent md:border-b border-solid border-gray-300 border-opacity-25 relative z-10'>
         <nav
           className={
             'py-2 lg:py-0 lg:my-0 lg:h-20 overflow-hidden' +
@@ -158,7 +158,7 @@ export const Nav = () => {
         </nav>
       </header>
 
-      <div className='flex items-start h-full flex-col px-8 py-24 md:py-48 lg:px-28'>
+      <div className='flex items-start h-full flex-col px-8 py-24 md:py-48 lg:px-28 relative z-10'>
         <h1 className='text-2xl md:text-4xl capitalize text-white mb-8 font-semibold lg:text-four md:leading-tight'>
           provide effective
           <br /> building solutions!

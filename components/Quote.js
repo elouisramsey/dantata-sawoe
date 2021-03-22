@@ -50,7 +50,7 @@ const Quote = () => {
   return (
     <>
       <div className='quote flex px-8 py-20 md:py-36 lg:px-28 bg-black'>
-        <div className='flex'>
+        <div className='flex relative z-10'>
           <div className='border-t-2 border-solid border-white w-12 lg:w-6 mt-2' />
           <div className='flex flex-col ml-4'>
             <h2 className='text-white capitalize mb-4 lg:text-sm text-tiny'>
@@ -87,7 +87,7 @@ const Quote = () => {
           </div>
         </div>
       </div>
-      <div className='lg:flex bg-white shadow-lg rounded-sm overflow-hidden -mt-4 lg:-mt-20 mb-20 mx-auto w-3/4 md:p-20 border-b-2 border-solid border-secondary qt-form'>
+      <div className='lg:flex bg-white shadow-lg rounded-sm overflow-hidden -mt-4 lg:-mt-20 mb-20 mx-auto w-3/4 md:p-20 border-b-2 border-solid border-secondary qt-form relative'>
         <div className='flex flex-col '>
           <div className='flex flex-col px-8 py-8 lg:py-16 bg-secondary'>
             <div className='flex-flex-col'>
