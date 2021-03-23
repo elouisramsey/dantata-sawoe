@@ -26,7 +26,7 @@ export const Nav = () => {
                   <div>
                     <Image
                       cloudName='walking-voice-limited'
-                      publicId='dantata/Dantata_and_Sawoe_pd4m7l.webp'
+                      publicId='dantata/logo_dxhkwn.webp'
                       alt='DANTATA & SAWOE'
                     >
                       <Transformation

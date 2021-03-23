@@ -18,7 +18,7 @@ const Recent = () => {
             <a className=''>
               <Image
                 cloudName='walking-voice-limited'
-                publicId='dantata/bayelsa_airport_cyfy2r.webp'
+                publicId='dantata/bayelsa_airport_pvjlfc.webp'
                 alt='Bayelsa Airport'
               >
                 <Transformation
@@ -60,7 +60,7 @@ const Recent = () => {
             <a className=''>
               <Image
                 cloudName='walking-voice-limited'
-                publicId='dantata/dangote_b2fysq.webp'
+                publicId='dantata/dangote_dsdgwa.webp'
                 alt='Dangote Refinery'
               >
                 <Transformation
