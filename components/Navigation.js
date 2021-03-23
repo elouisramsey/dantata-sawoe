@@ -20,7 +20,7 @@ export const Nav = () => {
           }
         >
           <div className='h-full md:px-4 lg:px-28 flex flex-wrap items-center md:flex-no-wrap'>
-            <div className='w-1/2 md:w-1/5 ml-8 md:ml-0 py-2 md:pr-2'>
+            <div className='w-1/2 md:w-2/5 lg:w-1/5 ml-8 lg:ml-0 py-2 md:pr-2'>
               <Link href='/'>
                 <a>
                   <div>
@@ -39,36 +39,40 @@ export const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='ml-auto md:hidden mr-4'>
+            <div className='ml-auto lg:hidden mr-4'>
               <button
-                className='flex items-center h-6 w-6 outline-none focus:outline-none'
+                className='flex items-center md:w-12 md:h-12 h-6 w-6 outline-none focus:outline-none'
                 type='button'
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 <FaTimes
                   className={
-                    navbarOpen ? 'block text-2xl text-white' : 'hidden'
+                    navbarOpen
+                      ? 'block md:text-6xl text-2xl text-white'
+                      : 'hidden'
                   }
                 />
                 <GiHamburgerMenu
                   className={
-                    navbarOpen ? 'hidden' : 'block text-2xl text-white'
+                    navbarOpen
+                      ? 'hidden'
+                      : 'block text-2xl md:text-6xl text-white'
                   }
                 />
               </button>
             </div>
             <div
               className={
-                'w-full md:w-auto md:flex-grow md:flex bg-secondary lg:bg-transparent md:items-center h-screen md:h-full transition duration-500 ease-in-out md:border-l md:border-r md:border-solid border-gray-300 md:border-opacity-25 lg:px-8 md:justify-between ' +
+                'w-full lg:w-auto lg:flex-grow lg:flex bg-secondary md:bg-transparent md:items-center h-screen lg:h-full transition duration-500 ease-in-out lg:border-l lg:border-r lg:border-solid border-gray-300 lg:border-opacity-25 lg:px-8 lg:justify-between ' +
                 (navbarOpen ? 'block' : ' hidden')
               }
             >
-              <ul className='flex flex-col mt-4 md:flex-row md:items-center md:mt-0 md:pt-0 justify-between w-full h-2/5 md:h-full px-8 md:px-0 transition duration-500 ease-in-out md:w-3/5'>
+              <ul className='flex flex-col mt-4 lg:flex-row lg:items-center lg:mt-0 lg:pt-0 justify-between w-full h-2/5 lg:h-full px-8 lg:px-0 transition duration-500 ease-in-out lg:w-3/5'>
                 <li className='transition duration-500 ease-in-out flex h-full items-center'>
                   <Link href='/'>
                     <a
                       className={
-                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white ' +
+                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white md:text-base lg:text-sm ' +
                         (router.pathname === '/' ? ' active' : null)
                       }
                     >
@@ -80,7 +84,7 @@ export const Nav = () => {
                   <Link href='/about'>
                     <a
                       className={
-                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white ' +
+                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white md:text-base lg:text-sm ' +
                         (router.pathname === '/about' ? ' active' : null)
                       }
                     >
@@ -92,7 +96,7 @@ export const Nav = () => {
                   <Link href='/services'>
                     <a
                       className={
-                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white ' +
+                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white md:text-base lg:text-sm ' +
                         (router.pathname === '/services' ? ' active' : null)
                       }
                     >
@@ -104,7 +108,7 @@ export const Nav = () => {
                   <Link href='/projects'>
                     <a
                       className={
-                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white ' +
+                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white md:text-base lg:text-sm ' +
                         (router.pathname === '/projects' ? ' active' : null)
                       }
                     >
@@ -116,7 +120,7 @@ export const Nav = () => {
                   <Link href='/news'>
                     <a
                       className={
-                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white ' +
+                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white md:text-base lg:text-sm ' +
                         (router.pathname === '/news' ? ' active' : null)
                       }
                     >
@@ -128,7 +132,7 @@ export const Nav = () => {
                   <Link href='/contact'>
                     <a
                       className={
-                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white ' +
+                        'font-medium text-sm hover:text-gray-300 capitalize h-full flex items-center justify-center text-white md:text-base lg:text-sm ' +
                         (router.pathname === '/contact' ? ' active' : null)
                       }
                     >
@@ -138,12 +142,12 @@ export const Nav = () => {
                 </li>
               </ul>
               <Link href='/Form'>
-                <a className='group relative text-xs md:text-sm bg-secondary focus:outline-none font-medium transition duration-500 ease-in-out border text-white rounded-sm py-2 px-3.5 block hover:bg-primary md:flex flex-row w-1/4 flex flex-row justify-center items-center border-secondary hidden'>
+                <a className='group relative text-xs md:text-sm bg-secondary focus:outline-none font-medium transition duration-500 ease-in-out border text-white rounded-sm py-2 px-3.5 block hover:bg-primary lg:flex flex-row w-1/4 flex flex-row justify-center items-center border-secondary hidden'>
                   Get a Quote <BsArrowRightShort className='text-2xl' />
                 </a>
               </Link>
             </div>
-            <div className='hidden md:flex items-center justify-center mx-4'>
+            <div className='hidden lg:flex items-center justify-center mx-4'>
               <a
                 href='tel:+2348092555519'
                 className='text-base font-light text-white flex items-center justify-center flex-row'
@@ -158,17 +162,17 @@ export const Nav = () => {
         </nav>
       </header>
 
-      <div className='flex items-start h-full flex-col px-8 py-24 md:py-48 lg:px-28 relative z-10'>
+      <div className='flex items-start h-full flex-col px-8 py-24 md:pt-80 md:pb-48 lg:py-48 lg:px-28 relative z-10'>
         <h1 className='text-2xl md:text-4xl capitalize text-white mb-8 font-semibold lg:text-four md:leading-tight'>
           provide effective
           <br /> building solutions!
         </h1>
-        <p className='font-normal w-full text-white text-sm lg:text-lg lg:w-1/2'>
+        <p className='font-normal w-full text-white text-sm lg:text-lg lg:w-1/2 md:text-base md:w-3/4'>
           A leading developer of A-grade commercial, industrial and residential
           projects in Nigeria. Since its foundation, the company has doubled its
           turnover year on year, with staff numbers swelling accordingly.
         </p>
-        <div className='flex flex-row lg:w-3/5 my-8 w-full'>
+        <div className='flex flex-row lg:w-3/5 my-8 w-full md:w-3/4'>
           {' '}
           <Link href='/services'>
             <a className='group relative text-xs md:text-sm bg-secondary focus:outline-none font-medium transition duration-500 ease-in-out border border-secondary hover:border-primary text-white rounded-sm py-2 lg:px-3.5 block hover:bg-primary flex flex-row w-1/2 lg:w-2/5 flex flex-row justify-center items-center z-20'>

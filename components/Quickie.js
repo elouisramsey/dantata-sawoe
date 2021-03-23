@@ -3,7 +3,7 @@ import { BsEnvelope, BsGeoAlt, BsArrowRightShort } from 'react-icons/bs'
 
 const Quickie = () => {
   return (
-    <div className='lg:flex items-start flex-row px-8 py-6 md:py-12 lg:px-28 justify-between'>
+    <div className='md:flex items-start md:flex-wrap lg:flex-nowrap flex-row px-8 py-6 md:py-12 lg:px-28 justify-between'>
       <div className='flex items-center lg:justify-center flex-row mb-4'>
         <div className='rounded-full h-8 w-8 lg:h-12 lg:w-12 flex items-center justify-center border border-opacity-25 border-secondary bg-secondary'>
           <BsEnvelope className='text-sm lg:text-base font-light text-white' />
@@ -45,7 +45,7 @@ const Quickie = () => {
           </div>
         </div>
       </div>
-      <div className='flex border border-secondary pl-6 py-12 lg:py-6 flex-col bg-secondary rounded-sm lg:-mt-28 z-40 mt-16'>
+      <div className='md:w-full lg:w-auto flex border border-secondary pl-6 py-12 lg:py-6 flex-col bg-secondary rounded-sm lg:-mt-28 z-40 mt-16'>
         <h3 className='text-white text-base mb-4 capitalize w-4/5'>
           a leading developer of A-Grade
           <br /> commercial & residential projects
