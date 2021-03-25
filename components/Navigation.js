@@ -162,7 +162,7 @@ export const Nav = () => {
         </nav>
       </header>
 
-      <div className='flex items-start h-full flex-col px-8 py-24 md:pt-80 md:pb-48 lg:py-48 lg:px-28 relative z-10'>
+      <div className='flex items-start h-full flex-col px-8 py-24 md:py-48 lg:px-28 relative z-10'>
         <h1 className='text-2xl md:text-4xl capitalize text-white mb-8 font-semibold lg:text-four md:leading-tight'>
           provide effective
           <br /> building solutions!
