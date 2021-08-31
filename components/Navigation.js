@@ -10,7 +10,7 @@ import { FiPhone } from 'react-icons/fi'
 export const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const router = useRouter()
-  return (
+  return ( 
     <div className='hero overflow-hidden h-screen'>
       <header className='w-full bg-transparent md:border-b border-solid border-gray-300 border-opacity-25 relative z-10'>
         <nav
@@ -19,8 +19,8 @@ export const Nav = () => {
             (navbarOpen ? ' bg-secondary' : ' bg-transparent')
           }
         >
-          <div className='h-full md:px-4 lg:px-28 flex flex-wrap items-center md:flex-no-wrap'>
-            <div className='w-1/2 md:w-2/5 lg:w-1/5 ml-8 lg:ml-0 py-2 md:pr-2'>
+          <div className='h-full md:px-4 lg:px-6 flex flex-wrap items-center md:flex-no-wrap'>
+            <div className='w-1/2 md:w-2/5 lg:w-1/5 ml-8 lg:ml-0 py-2'>
               <Link href='/'>
                 <a>
                   <div>
@@ -162,7 +162,7 @@ export const Nav = () => {
         </nav>
       </header>
 
-      <div className='flex items-start h-full flex-col px-8 py-24 md:py-48 lg:px-28 relative z-10'>
+      <div className='flex items-start h-full flex-col px-8 py-12 md:py-8 lg:px-6 relative z-10'>
         <h1 className='text-2xl md:text-4xl capitalize text-white mb-8 font-semibold lg:text-four md:leading-tight'>
           provide effective
           <br /> building solutions!
